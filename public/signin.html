@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Example Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    fieldset {
+      border: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    legend {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Example Form</h1>
+  <form action="/submit" method="post">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+      
+    </fieldset>
+
+    <fieldset>
+      <legend>Address</legend>
+      <div>
+        <label for="address">Street Address:</label>
+        <input type="text" id="address" name="address">
+      </div>
+      <div>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city">
+      </div>
+      <div>
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state">
+      </div>
+      <div>
+        <label for="zip">ZIP Code:</label>
+        <input type="text" id="zip" name="zip">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Interests</legend>
+      <div>
+        <input type="checkbox" id="interest1" name="interests" value="music">
+        <label for="interest1">Music</label>
+      </div>
+      <div>
+        <input type="checkbox" id="interest2" name="interests" value="sports">
+        <label for="interest2">Sports</label>
+      </div>
+      <div>
+        <input type="checkbox" id="interest3" name="interests" value="books">
+        <label for="interest3">Books</label>
+      </div>
+    </fieldset>
+
+    <div>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+</body>
+
+<script src="/index.js"></script>
+</html>
