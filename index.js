@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use(express.urlencoded({ extended: true }));
 
-const url='mongodb+srv://prethambachira:1819@cluster0.2rcpjkw.mongodb.net/?retryWrites=true&w=majority';
+const url='mongodb+srv://prethambachira:password@cluster0.2rcpjkw.mongodb.net/?retryWrites=true&w=majority';
 
 async function forms(){
 
