@@ -5,7 +5,8 @@
 6    "scripts": {
 7        "build": "echo \"No build specified\" && exit 1",
 8        "test": "echo \"No test specified\" && exit 1",
-9        "start": "node index.js"
+9        "start": "node index.js",
+         "outDir": "./" 
 10    },
 11    "repository": {
 12        "type": "git",
